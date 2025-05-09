@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Study Community</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .form-container {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .header-section {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .header-section h1 {
+            color: #2c3e50;
+            font-weight: 700;
+        }
+        
+        .form-control:focus {
+            border-color: #6c63ff;
+            box-shadow: 0 0 0 0.25rem rgba(108, 99, 255, 0.25);
+        }
+        
+        .btn-primary {
+            background-color: #6c63ff;
+            border-color: #6c63ff;
+            padding: 10px 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: #5a52d5;
+            border-color: #5a52d5;
+            transform: translateY(-2px);
+        }
+        
+        .form-label {
+            font-weight: 600;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        
+        .form-check-label {
+            font-weight: normal;
+        }
+        
+        .icon-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .icon-container i {
+            font-size: 60px;
+            color: #6c63ff;
+        }
+        
+        .section-divider {
+            margin: 30px 0;
+            border-top: 1px solid #e9ecef;
+        }
+        
+        .required-field::after {
+            content: "*";
+            color: red;
+        }
+        
+        .form-text {
+            font-size: 0.875rem;
+        }
+        .navbar {
+            padding: 15px 0;
+        }
+        .navbar-brand {
+            font-weight: 700;
+            color: #4CA5F0;
+            font-size: 1.5rem;
+        }
+        .nav-link {
+            color: #333;
+            font-weight: 500;
+            margin: 0 10px;
+        }
+        .btn-daftar {
+            background-color: #4CA5F0;
+            color: white;
+            border-radius: 20px;
+            padding: 8px 20px;
+        }
+        .header-banner {
+            background-color: #4CA5F0;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        .header-banner h1 {
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="beranda.html">Kembali</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    </nav>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10">
+                <div class="form-container">
+                    <div class="header-section">
+                        <div class="icon-container">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h1>Pendaftaran Study Community</h1>
+                        <p class="text-muted">Bergabunglah dengan komunitas belajar kami dan kembangkan potensi Anda bersama!</p>
+                    </div>
+                    
+                    <form id="studyCommunityForm" class="needs-validation" novalidate>
+                        <!-- Data Pribadi -->
+                        <div class="mb-4">
+                            <h5 class="mb-3"><i class="fas fa-user me-2"></i>Data Pribadi</h5>
+                            
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="firstName" class="form-label required-field">Nama Depan</label>
+                                    <input type="text" class="form-control" id="firstName" required>
+                                    <div class="invalid-feedback">
+                                        Nama depan wajib diisi.
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="lastName" class="form-label">Nama Belakang</label>
+                                    <input type="text" class="form-control" id="lastName">
+                                </div>
+                            </div>
+                            
+                            <div class="row g-3 mt-1">
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label required-field">Email</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                    <div class="invalid-feedback">
+                                        Email wajib diisi dengan format yang benar.
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="phone" class="form-label required-field">No. Telepon/WhatsApp</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                                        <input type="tel" class="form-control" id="phone" required>
+                                    </div>
+                                    <div class="invalid-feedback">
+                                        Nomor telepon wajib diisi.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row g-3 mt-1">
+                                <div class="col-md-6">
+                                    <label for="birthdate" class="form-label">Tanggal Lahir</label>
+                                    <input type="date" class="form-control" id="birthdate">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="gender" class="form-label">Jenis Kelamin</label>
+                                    <select class="form-select" id="gender">
+                                        <option value="" selected disabled>Pilih jenis kelamin</option>
+                                        <option value="male">Laki-laki</option>
+                                        <option value="female">Perempuan</option>
+                                        <option value="other">Lainnya</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="section-divider"></div>
+                        
+                        <!-- Data Pendidikan -->
+                        <div class="mb-4">
+                            <h5 class="mb-3"><i class="fas fa-graduation-cap me-2"></i>Data Pendidikan</h5>
+                            
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="education" class="form-label required-field">Pendidikan Terakhir</label>
+                                    <select class="form-select" id="education" required>
+                                        <option value="" selected disabled>Pilih pendidikan terakhir</option>
+                                        <option value="sma">SMA/SMK/Sederajat</option>
+                                        <option value="d3">Diploma (D3)</option>
+                                        <option value="s1">Sarjana (S1)</option>
+                                        <option value="s2">Magister (S2)</option>
+                                        <option value="s3">Doktor (S3)</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Pendidikan terakhir wajib dipilih.
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="institution" class="form-label">Institusi/Universitas</label>
+                                    <input type="text" class="form-control" id="institution">
+                                </div>
+                            </div>
+                            
+                            <div class="row g-3 mt-1">
+                                <div class="col-md-6">
+                                    <label for="major" class="form-label">Jurusan/Program Studi</label>
+                                    <input type="text" class="form-control" id="major">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="graduationYear" class="form-label">Tahun Lulus</label>
+                                    <input type="number" class="form-control" id="graduationYear" min="1970" max="2025">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="section-divider"></div>
+                        
+                        <!-- Minat Belajar -->
+                        <div class="mb-4">
+                            <h5 class="mb-3"><i class="fas fa-book me-2"></i>Minat Belajar</h5>
+                            
+                            <div class="mb-3">
+                                <label for="studyProgram" class="form-label required-field">Program yang Diminati</label>
+                                <select class="form-select" id="studyProgram" required>
+                                    <option value="" selected disabled>Pilih program yang diminati</option>
+                                    <option value="programming">Programming & Development</option>
+                                    <option value="design">UI/UX & Design</option>
+                                    <option value="business">Business & Entrepreneurship</option>
+                                    <option value="marketing">Digital Marketing</option>
+                                    <option value="language">Languages</option>
+                                    <option value="science">Science & Mathematics</option>
+                                    <option value="other">Lainnya</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Program yang diminati wajib dipilih.
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3" id="otherProgramContainer" style="display: none;">
+                                <label for="otherProgram" class="form-label">Program Lainnya (tuliskan)</label>
+                                <input type="text" class="form-control" id="otherProgram">
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label class="form-label">Level Pengetahuan</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="knowledgeLevel" id="beginner" value="beginner" checked>
+                                    <label class="form-check-label" for="beginner">
+                                        Pemula (Belum pernah belajar sebelumnya)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="knowledgeLevel" id="intermediate" value="intermediate">
+                                    <label class="form-check-label" for="intermediate">
+                                        Menengah (Memiliki pengetahuan dasar)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="knowledgeLevel" id="advanced" value="advanced">
+                                    <label class="form-check-label" for="advanced">
+                                        Mahir (Sudah berpengalaman)
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="expectation" class="form-label required-field">Ekspektasi & Tujuan Belajar</label>
+                                <textarea class="form-control" id="expectation" rows="3" required></textarea>
+                                <div class="form-text">Jelaskan tujuan dan harapan Anda bergabung dengan study community ini.</div>
+                                <div class="invalid-feedback">
+                                    Ekspektasi & tujuan belajar wajib diisi.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="section-divider"></div>
+                        
+                        <!-- Preferensi Belajar -->
+                        <div class="mb-4">
+                            <h5 class="mb-3"><i class="fas fa-sliders-h me-2"></i>Preferensi Belajar</h5>
+                            
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="studyTime" class="form-label">Waktu Belajar yang Disukai</label>
+                                    <select class="form-select" id="studyTime">
+                                        <option value="" selected disabled>Pilih waktu belajar</option>
+                                        <option value="morning">Pagi (08.00 - 12.00)</option>
+                                        <option value="afternoon">Siang (13.00 - 17.00)</option>
+                                        <option value="evening">Malam (18.00 - 22.00)</option>
+                                        <option value="weekend">Akhir Pekan</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="studyMode" class="form-label">Mode Belajar yang Disukai</label>
+                                    <select class="form-select" id="studyMode">
+                                        <option value="" selected disabled>Pilih mode belajar</option>
+                                        <option value="online">Online (Virtual)</option>
+                                        <option value="offline">Offline (Tatap Muka)</option>
+                                        <option value="hybrid">Hybrid (Campuran)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3 mt-3">
+                                <label class="form-label">Preferensi Metode Belajar</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="methodVideo">
+                                    <label class="form-check-label" for="methodVideo">Video Tutorial</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="methodDiscussion">
+                                    <label class="form-check-label" for="methodDiscussion">Diskusi Kelompok</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="methodPractice">
+                                    <label class="form-check-label" for="methodPractice">Praktik Langsung</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="methodReading">
+                                    <label class="form-check-label" for="methodReading">Membaca Materi</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="methodMentoring">
+                                    <label class="form-check-label" for="methodMentoring">Mentoring</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="section-divider"></div>
+                        
+                        <!-- Persetujuan -->
+                        <div class="mb-4">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="termsAgreement" required>
+                                <label class="form-check-label" for="termsAgreement">
+                                    Saya menyetujui <a href="#" data-bs-toggle="modal" data-bs-target="#termsModal">syarat dan ketentuan</a> yang berlaku
+                                </label>
+                                <div class="invalid-feedback">
+                                    Anda harus menyetujui syarat dan ketentuan untuk melanjutkan.
+                                </div>
+                            </div>
+                            
+                            <div class="form-check mt-2">
+                                <input class="form-check-input" type="checkbox" id="newsletterSubscription">
+                                <label class="form-check-label" for="newsletterSubscription">
+                                    Saya ingin menerima informasi terbaru dan penawaran melalui email
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <!-- Submit Button -->
+                        <div class="d-grid gap-2 col-md-6 mx-auto mt-4">
+                            <button type="submit" class="btn btn-primary btn-lg">
+                                <i class="fas fa-paper-plane me-2"></i>Kirim Pendaftaran
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Terms Modal -->
+    <div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="termsModalLabel">Syarat dan Ketentuan</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>1. Pendaftaran</h6>
+                    <p>Dengan mendaftar ke Study Community, Anda menyetujui untuk memberikan informasi yang akurat, lengkap, dan terkini tentang diri Anda sebagaimana diminta dalam formulir pendaftaran.</p>
+                    
+                    <h6>2. Privasi</h6>
+                    <p>Data pribadi yang Anda berikan akan disimpan dengan aman dan hanya digunakan untuk kepentingan Study Community sesuai dengan kebijakan privasi kami.</p>
+                    
+                    <h6>3. Komunikasi</h6>
+                    <p>Dengan mendaftar, Anda setuju untuk menerima komunikasi dari Study Community terkait program belajar, perubahan jadwal, dan informasi lainnya melalui email atau nomor telepon yang Anda berikan.</p>
+                    
+                    <h6>4. Kode Etik</h6>
+                    <p>Semua anggota Study Community diharapkan untuk menghormati sesama anggota, fasilitator, dan tutor. Perilaku yang tidak pantas dapat mengakibatkan penghentian keanggotaan.</p>
+                    
+                    <h6>5. Pembatalan</h6>
+                    <p>Jika Anda ingin membatalkan keanggotaan, silakan hubungi admin Study Community minimal 7 hari sebelumnya.</p>
+                    
+                    <h6>6. Perubahan Ketentuan</h6>
+                    <p>Study Community berhak untuk mengubah syarat dan ketentuan ini kapan saja. Perubahan akan diinformasikan melalui email.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Saya Setuju</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Form validation
+        (function () {
+            'use strict'
+            
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+            
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        } else {
+                            event.preventDefault()
+                            alert('Terima kasih! Pendaftaran Anda telah berhasil terkirim.')
+                            form.reset()
+                        }
+                        
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+        
+        // Show/hide "Other Program" field based on selection
+        document.getElementById('studyProgram').addEventListener('change', function() {
+            const otherProgramContainer = document.getElementById('otherProgramContainer');
+            if (this.value === 'other') {
+                otherProgramContainer.style.display = 'block';
+                document.getElementById('otherProgram').setAttribute('required', '');
+            } else {
+                otherProgramContainer.style.display = 'none';
+                document.getElementById('otherProgram').removeAttribute('required');
+            }
+        });
+    </script>
+</body>
+</html>

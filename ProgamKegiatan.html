@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Program Kerja</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+     body {
+            font-family: 'Poppins', sans-serif;
+        }
+    .hero {
+      background-color: #499AE1;
+      color: white;
+      padding: 60px 0;
+      margin-bottom: 15px;
+    }
+
+    .hero-img {
+      max-width: 300px;
+    }
+
+    .btn-daftar {
+      background-color: #00AEEF;
+      color: white;
+      border-radius: 10px;
+    }
+
+    .btn-daftar:hover {
+      background-color: #0090cc;
+    }
+
+    .footer {
+      background-color: #1a254b;
+      color: white;
+      padding: 50px 0 20px;
+  }
+  
+  .footer-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+  }
+  
+  .footer-links {
+      list-style: none;
+      padding: 0;
+  }
+  
+  .footer-links li {
+      margin-bottom: 10px;
+  }
+  
+  .footer-links a {
+      color: white;
+      text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+      color: #3498db;
+  }
+  
+  .contact-info {
+      margin-bottom: 15px;
+      display: flex;
+      align-items: start;
+  }
+  
+  .contact-info i {
+      margin-right: 10px;
+      color: #3498db;
+  }
+  
+  .footer-bottom {
+      text-align: center;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      margin-top: 30px;
+  }
+  
+  .logo-img {
+      width: 100%;
+      max-width: 200px;
+  }
+
+  .navbar {
+    padding: 15px 0;
+    background-color: white;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.shadow-custom {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* bayangan lembut tapi terlihat */
+  }
+
+  .transition-card {
+    transition: box-shadow 0.31s ease, transform 0.3s ease;
+  }
+
+  .transition-card:hover {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+  }
+  </style> 
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">Study Community</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="beranda.html">Beranda</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Tentang Kami </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="sejarah.html">Sejarah</a></li>
+                      <li><a class="dropdown-item" href="visimisi.html">Visi Misi</a></li>
+                      <li><a class="dropdown-item" href="ProgamKegiatan.html">Program Kegiatan</a></li>
+                    </ul>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ProgramKhusus.html">Program</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="beranda.html">Respon</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Kontak">Kontak</a>
+                </li>
+                <li class="nav-item ms-2">
+                    <a class="btn btn-primary" href="daftar.html">Daftar Sekarang</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-7">
+          <h1 class="fw-bold">PROGRAM KERJA<br>DAN RENCANA KEGIATAN</h1>
+        </div>
+        <div class="col-md-5 text-center">
+          <img src="img/logo study community.png" alt="Ilustrasi" class="img-fluid hero-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Program Section 1 -->
+<section class="py-4">
+    <div class="container">
+      <div class="card rounded-4 p-3 shadow-custom transition-card" style="background-color: #a29bfe;">
+        <div class="row align-items-center g-3">
+  
+          <!-- Gambar Kiri -->
+          <div class="col-md-4 text-center">
+            <img src="img/GB1.png" class="img-fluid shadow-lg rounded" alt="Program Gambar" style="max-height: 300px;">
+          </div>
+  
+          <!-- Konten Kanan -->
+          <div class="col-md-8 text-white ps-3 ps-md-4">
+            <h4 class="fw-bold">1. Langkah Jangka Pendek (0–3 bulan)</h4>
+            <p class="mb-1"><strong>Fokus:</strong> Pembentukan, pengenalan, dan penguatan fondasi internal.</p>
+            <ul>
+              <li>Menyusun struktur organisasi dan pembagian tugas kepengurusan.</li>
+              <li>Menetapkan visi, misi, aturan dasar, serta nilai-nilai grup.</li>
+              <li>Menentukan jadwal belajar rutin dan platform komunikasi (WhatsApp, Google Meet, dsb).</li>
+              <li>Melakukan sosialisasi dan perekrutan anggota.</li>
+              <li>Menyusun program belajar mingguan: diskusi materi, latihan soal, kuis kelompok.</li>
+              <li>Melakukan evaluasi awal terhadap efektivitas sistem belajar yang diterapkan.</li>
+            </ul>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  </section>
+  
+ <!-- Program Section 2 -->
+<section class="py-4">
+    <div class="container">
+      <div class="card rounded-4 p-3 shadow-custom transition-card" style="background-color: #a29bfe;">
+        <div class="row align-items-center g-3">
+          
+          <!-- Konten Kiri -->
+          <div class="col-md-8 text-white ps-3 ps-md-4">
+            <h4 class="fw-bold">2. Langkah Jangka Menengah (3 bulan - 6 bulan)</h4>
+            <p class="mb-1"><strong>Fokus:</strong> Pengembangan kegiatan, peningkatan kapasitas anggota, dan perluasan jaringan</p>
+            <ul>
+              <li>Menyelenggarakan workshop, kelas tamu, atau sesi mentoring dengan narasumber luar</li>
+              <li>Membentuk tim khusus untuk pengembangan konten belajar dan media sosial grup</li>
+              <li>Membuat modul atau catatan belajar bersama yang terstruktur</li>
+              <li>Mendorong partisipasi anggota dalam lomba akademik, seminar, atau kompetisi ilmiah</li>
+              <li>Melakukan kolaborasi dengan organisasi lain atau komunitas belajar sejenis</li>
+              <li>Mengevaluasi program rutin dan menyempurnakannya berdasarkan feedback anggota</li>
+              <li>Mengembangkan sistem keanggotaan dan dokumentasi kegiatan grup</li>
+            </ul>
+          </div>
+  
+          <!-- Gambar Kanan -->
+          <div class="col-md-4 text-center">
+            <img src="img/GB2.png" class="img-fluid rounded" alt="Program Gambar" style="max-height: 300px;">
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+
+
+ <!-- Program Section 3 -->
+<section class="py-4">
+    <div class="container">
+      <div class="card shadow-custom rounded-4 p-3 transition-card" style="background-color: #a29bfe;">
+        <div class="row align-items-center g-3">
+          
+          <!-- Gambar Kiri -->
+          <div class="col-md-4 text-center">
+            <img src="img/GB3.png" class="img-fluid shadow-lg rounded" alt="Program Gambar" style="max-height: 300px;">
+          </div>
+          
+          <!-- Konten Kanan -->
+          <div class="col-md-8 ps-3 ps-md-4">
+            <h4 class="fw-bold text-white">3. Langkah Jangka Panjang (6 Bulan–1 tahun ke depan)</h4>
+            <p class="mb-1 text-white"><strong>Fokus:</strong> Sustainabilitas, dampak lebih luas, dan pencapaian kualitas tinggi</p>
+            <ul class="text-white">
+              <li>Membentuk Study Grup sebagai komunitas belajar resmi yang diakui institusi (jika memungkinkan)</li>
+              <li>Membuat website atau platform pembelajaran digital milik sendiri</li>
+              <li>Menjadi fasilitator kegiatan belajar bagi komunitas di luar anggota inti (pengabdian atau mentoring)</li>
+              <li>Membangun sistem regenerasi dan pelatihan kepemimpinan untuk keberlanjutan grup</li>
+              <li>Menerbitkan karya ilmiah, artikel, atau jurnal bersama sebagai hasil diskusi grup</li>
+              <li>Menjadikan Study Grup sebagai model bagi pembentukan komunitas belajar lain</li>
+            </ul>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  
+
+  <footer class="footer" id="Kontak">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h3 class="footer-title">Study Community</h3>
+                <p>Komunitas belajar yang dirancang khusus untuk siswa SMK, meningkatkan keterampilan, perluas jaringan, dan raih masa depan cerah bersama!</p>
+            </div>
+            
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h3 class="footer-title">Navbar</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Beranda</a></li>
+                    <li><a href="#">Tentang Kami</a></li>
+                    <li><a href="#">Program</a></li>
+                    <li><a href="#">Jurusan</a></li>
+                    <li><a href="#">Kontak</a></li>
+                </ul>
+            </div>
+            
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h3 class="footer-title">Program</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Coding</a></li>
+                    <li><a href="#">Design Studio</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Digital Marketing</a></li>
+                    <li><a href="#">Multi Media</a></li>
+                    <li><a href="#">Sosialisasi</a></li>
+                </ul>
+            </div>
+            
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h3 class="footer-title">Kontak</h3>
+                <div class="contact-info">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <p>Jl. Wijaya Kusuma No.46, Giri, Banyuwangi</p>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <p>(0333) - 424541</p>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <p>smkn1bwi_wk46@yahoo.co.id </p>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <p>Jumat 12:30-15:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>SMKN 1 BANYUWANGI</p>
+        </div>
+    </div>
+</footer>
+
+  </body>
+</html>
