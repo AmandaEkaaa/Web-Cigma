@@ -44,6 +44,20 @@ body {
     border-radius: 10px;
     font-size: 32px;
     font-weight: bold;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 main {
@@ -143,7 +157,7 @@ main {
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 </style>
