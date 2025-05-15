@@ -10,6 +10,31 @@ body {
 .vm {
     font-family: 'inter', sans-serif;
 }
+    body {
+        font-family: 'Poppins', sans-serif;
+        padding-top: 80px;
+    }
+    .card-gaul {
+        border: none;
+        border-radius: 20px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        background: linear-gradient(135deg, #60B5FF, #32a0cb);
+        color: #fff;
+        transition: transform 0.3s ease;
+    }
+    .card-gaul:hover {
+        transform: translateY(-5px);
+    }
+    .card-gaul h3 {
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    .card-gaul p,
+    .card-gaul li {
+        font-size: 16px;
+        line-height: 1.6;
+    }
 
 .vm h1 {
 font-family: 'Inter', sans-serif ;

@@ -47,6 +47,7 @@ body {
     opacity: 0;
     transform: translateY(20px);
     animation: fadeInUp 1s ease-in-out forwards;
+    
 }
 
 @keyframes fadeInUp {
@@ -76,17 +77,21 @@ main {
 }
      
 .hero-image {
-    background-image: url('img/sjrh.jpg');
-    height: 100vh;
-    background-attachment: fixed;
-    background-position: center 65%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+background: 
+ linear-gradient(0deg, rgb(55, 138, 197) 10%, rgba(8, 8, 8, 0) 96%),
+ url('img/sjrh.jpg');
+height: 100vh;
+background-attachment: fixed;
+background-position: center 65%;
+background-repeat: no-repeat;
+background-size: cover;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+
+    
 }
  
 .footer {
@@ -164,7 +169,7 @@ main {
 </head>
 <body>
     
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
         <div class="container">
             <a class="navbar-brand" href="#">Study Community</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -181,7 +186,7 @@ main {
                         <ul class="dropdown-menu">
                           <li><a class="dropdown-item" href="sejarah.html">Sejarah</a></li>
                           <li><a class="dropdown-item" href="visimisi.html">Visi Misi</a></li>
-                          <li><a class="dropdown-item" href="ProgamKegiatan.html">Program Kegiatan</a></li>
+                          <li><a class="dropdown-item" href="ProgamKegiatan.html">Rencana Kegiatan</a></li>
                         </ul>
                       </li>
                     <li class="nav-item">
@@ -205,25 +210,35 @@ main {
       SEJARAH STUDY COMMUNITY
     </div>
   </div>
-  <main>
-    <p>
-      Dalam dunia pendidikan, proses pembelajaran tidak hanya terbatas pada ruang kelas atau interaksi satu arah antara pengajar dan peserta didik. Perkembangan zaman menuntut adanya inovasi dan pendekatan baru dalam menggali ilmu pengetahuan secara lebih efektif. Salah satu metode yang terbukti efektif adalah dengan membentuk komunitas belajar atau <strong>Study Grup</strong>.
-    </p>
-    <p>
-      <strong>Study Grup</strong> merupakan sebuah wadah kolaboratif yang memungkinkan para anggotanya untuk saling berbagi pengetahuan, berdiskusi, menyelesaikan permasalahan belajar bersama, serta membentuk pola pikir kritis dan aktif. Dalam kelompok belajar, proses pemahaman materi menjadi lebih dinamis karena adanya interaksi langsung antara anggota yang saling melengkapi.
-    </p>
-    <div class="foto-section">
-        <div class="foto-box">
-          <img src="img/img1.jpg" alt="Kegiatan 1" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
-        </div>
-        <div class="foto-box">
-          <img src="img/img3.jpg" alt="Kegiatan 2" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
-        </div>
-      </div>
-    <p>
-      Dalam konteks pendidikan modern, <strong>Study Grup</strong> juga berfungsi sebagai sarana untuk membangun keterampilan sosial, kepemimpinan, serta kemampuan berpikir kritis dan kreatif. Dengan demikian, <strong>Study Grup</strong> tidak hanya berperan dalam mendukung prestasi akademik, tetapi juga dalam membentuk karakter dan kemampuan kolaboratif yang dibutuhkan di masa depan.
-    </p>
-  </main>
+<main>
+  <h2 class="mb-4 text-center" style="font-weight: 600;">Awal Mula Terbentuknya Study Community</h2>
+
+  <blockquote class="blockquote text-center" style="background-color: #eef7ff; border-left: 5px solid #3498db; padding: 20px; border-radius: 10px;">
+    <p class="mb-0" style="font-size: 1.1rem;">“Belajar nggak harus sendirian — bareng komunitas, semua terasa lebih ringan dan bermakna.”</p>
+  </blockquote>
+
+  <p class="mt-4">
+    Dalam dunia pendidikan, proses pembelajaran tidak hanya terbatas pada ruang kelas atau interaksi satu arah antara pengajar dan peserta didik. Perkembangan zaman menuntut adanya inovasi dan pendekatan baru dalam menggali ilmu pengetahuan secara lebih efektif. Salah satu metode yang terbukti efektif adalah dengan membentuk komunitas belajar atau <strong>Study Grup</strong>.
+  </p>
+
+  <p>
+    <strong>Study Grup</strong> merupakan sebuah wadah kolaboratif yang memungkinkan para anggotanya untuk saling berbagi pengetahuan, berdiskusi, menyelesaikan permasalahan belajar bersama, serta membentuk pola pikir kritis dan aktif. Dalam kelompok belajar, proses pemahaman materi menjadi lebih dinamis karena adanya interaksi langsung antara anggota yang saling melengkapi.
+  </p>
+
+  <div class="foto-section">
+    <div class="foto-box">
+      <img src="img/img1.jpg" alt="Kegiatan 1" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+    </div>
+    <div class="foto-box">
+      <img src="img/img3.jpg" alt="Kegiatan 2" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+    </div>
+  </div>
+
+  <h4 style="font-weight: 600;" class="mt-4">Bukan Sekadar Belajar</h4>
+  <p>
+    Dalam konteks pendidikan modern, <strong>Study Grup</strong> juga berfungsi sebagai sarana untuk membangun keterampilan sosial, kepemimpinan, serta kemampuan berpikir kritis dan kreatif. Dengan demikian, <strong>Study Grup</strong> tidak hanya berperan dalam mendukung prestasi akademik, tetapi juga dalam membentuk karakter dan kemampuan kolaboratif yang dibutuhkan di masa depan.
+  </p>
+</main>
 
   <footer class="footer">
     <div class="container">
